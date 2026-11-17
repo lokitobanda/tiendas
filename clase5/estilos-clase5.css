@@ -1,0 +1,93 @@
+.clase5-contenedor {
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.clase5-seccion {
+    margin: 24px 0;
+    padding: 24px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 2px 10px rgba(10, 45, 115, 0.14);
+}
+
+.clase5-seccion form {
+    display: grid;
+    gap: 10px;
+}
+
+.clase5-seccion input,
+.clase5-seccion select,
+.clase5-seccion textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #718096;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.clase5-seccion button {
+    width: fit-content;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: #0a2d73;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.clase5-mensaje {
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+
+.clase5-exito {
+    background: #e6f4ea;
+    color: #1e5631;
+}
+
+.clase5-error {
+    background: #fde8e7;
+    color: #8a1c13;
+}
+
+.clase5-error p {
+    margin-top: 0;
+}
+
+.clase5-busqueda {
+    display: flex;
+    gap: 10px;
+}
+
+.clase5-busqueda input {
+    flex: 1;
+}
+
+.clase5-resultados {
+    padding: 0;
+    list-style: none;
+}
+
+.clase5-resultados li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #d5dbe5;
+}
+
+@media (max-width: 560px) {
+    .clase5-seccion {
+        padding: 16px;
+    }
+
+    .clase5-busqueda,
+    .clase5-resultados li {
+        flex-direction: column;
+    }
+}
